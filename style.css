@@ -1,14 +1,40 @@
-body{
-    background: black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:lightblue;
+    
 }
+
 .bg-image{
     background-image: url("https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     height: 100vh;
     width: 100%;
-    opacity:80%;
-    background-color:rgba(0,0,0,0.1);
+    /* -webkit-mask-image: url("https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    -webkit-mask-image: linear-gradient(purple,transparent);
+    mask-image:black;
+    background-color:purple;
+    position: relative;
+    
+
+    
+   
     
     
     
+}
+/* body ::after{
+    background-color:purple;
+    opacity:0.8;
+} */
+.container{
+    margin:5rem;
+    height:80vh;
+    width:70%;
+    justify-content: center;
+    display: flex;
+    padding: 10rem;
+    z-index: 1;
+    position:absolute;
 }
