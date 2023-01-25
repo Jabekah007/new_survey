@@ -1,21 +1,25 @@
-*{
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color:lightblue;
+    font-family: sans-serif;
     
 }
 
 .bg-image{
+    background-color: lightblue;
     background-image: url("https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     height: 100vh;
     width: 100%;
     /* -webkit-mask-image: url("https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600"); */
-    -webkit-mask-image: linear-gradient(purple,transparent);
+    /* -webkit-mask-image: linear-gradient(purple,transparent); */
     mask-image:black;
     background-color:purple;
     position: relative;
+    overflow-y: scroll;
+    opacity: 60%;
     
 
     
@@ -29,12 +33,96 @@
     opacity:0.8;
 } */
 .container{
-    margin:5rem;
-    height:80vh;
-    width:70%;
-    justify-content: center;
+    background: none;
+    margin-top:2rem;
+    height:100vh;
+    width:100%;
+    
+    
     display: flex;
-    padding: 10rem;
+    justify-content: center;
+    
+    padding: 2rem;
     z-index: 1;
     position:absolute;
+    
+    
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    
+}
+header{
+    margin-top: 0;
+    text-align: center;
+}
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(59, 26, 26);
+    opacity: 100%;
+    color: white;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    
+
+    
+    
+}
+.input{
+    display: block;
+    padding-top:1rem;
+    padding-bottom: 0.3rem;
+
+
+}
+input{
+    margin-top: 0.5rem;
+    display:block;
+    width: 300px;
+    height: 30px;
+}
+label{
+    text-align: left;
+    
+}
+.form-section{
+
+    
+    flex: content;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    
+    
+
+    background-color: black;
+    color: white;
+    width: 80%;
+    place-content: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    
+
+}
+main{
+    width: 80%;
+    
+}
+button{
+    margin-bottom: 3rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 0.5rem;
+    width:300px;
+    height:3rem;
+    margin-top: 10px;
+
 }
